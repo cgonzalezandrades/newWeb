@@ -8,10 +8,16 @@ import { MatButtonModule } from "@angular/material/button";
 import { AppComponent } from "./app.component";
 
 import { NavbarComponent } from "./components/navbar/navbar.component";
-import { MainBannerComponent } from "./components/main-banner/main-banner.component";
+import { TopBannerComponent } from "./components/banners/top-banner/top-banner.component";
+import { BottomBannerComponent } from "./components/banners/bottom-banner/bottom-banner.component";
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, MainBannerComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    TopBannerComponent,
+    BottomBannerComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

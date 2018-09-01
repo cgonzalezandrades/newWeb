@@ -1,0 +1,26 @@
+.top-banner-component {
+  height: 100%;
+  background-image: url(https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/19429651_10156297026352564_3334643979282075073_n.jpg?_nc_cat=0&oh=c837b1fb0df9a8983763858dd923bddc&oe=5BF46BC5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .top-banner {
+    height: 100%;
+    .banner-left-col {
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      .banner-profile-picture {
+        width: 70px;
+        height: 70px;
+        border-radius: 30px;
+      }
+    }
+
+    .banner-right-col {
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+  }
+}
