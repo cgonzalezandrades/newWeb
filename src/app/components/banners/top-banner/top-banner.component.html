@@ -2,8 +2,8 @@
 <div class="top-banner-component">
     <div class=" row top-banner">
         <div class="banner-left-col flex justify-content-center">
-            <div class="row justify-content-center">
-                <img class="banner-profile-picture" src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/19437215_10156297028102564_3645964650910157043_n.jpg?_nc_cat=0&oh=2fe2e7df62f01d9c8a1a1002a130f9c9&oe=5BEF64EC">
+            <div class="row justify-content-center" id="pic">
+                <img class="banner-profile-picture" *ngIf="show" src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/19437215_10156297028102564_3645964650910157043_n.jpg?_nc_cat=0&oh=2fe2e7df62f01d9c8a1a1002a130f9c9&oe=5BEF64EC">
             </div>
             <div class="row justify-content-center">
                 <h3 class="mb-0">Carlos Gonzalez</h3>
@@ -12,7 +12,7 @@
                 <h5 class="mt-0">Software Developer</h5>
             </div>
         </div>
-        <div class="banner-right-col flex justify-content-center">
+        <div class="banner-right-col flex justify-content-center" (click)="test()">
             center
         </div>
     </div>

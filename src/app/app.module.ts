@@ -11,6 +11,8 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { TopBannerComponent } from "./components/banners/top-banner/top-banner.component";
 import { BottomBannerComponent } from "./components/banners/bottom-banner/bottom-banner.component";
 
+import { NavbarService } from "./components/navbar/navbar.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,9 @@ import { BottomBannerComponent } from "./components/banners/bottom-banner/bottom
     ButtonsModule.forRoot(),
     MatButtonModule
   ],
-  providers: [],
+  providers: [
+    NavbarService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

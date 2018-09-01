@@ -1,4 +1,6 @@
-import { Component } from "@angular/core";
+import { BottomBannerComponent } from "../banners/bottom-banner/bottom-banner.component";
+import { Component, ViewChild } from "@angular/core";
+import { NavbarService } from "./navbar.service";
 
 @Component({
   selector: "app-navbar",
@@ -6,15 +8,21 @@ import { Component } from "@angular/core";
   styleUrls: ["./navbar.component.scss"]
 })
 export class NavbarComponent {
-  menuOpened = false;
+  constructor(public navbarService: NavbarService) {}
+
+  menuclicked = false;
   animateIcon() {
     const element = document.getElementById("container");
-    if (this.menuOpened) {
+    if (this.menuclicked) {
       element.classList.remove("change");
-      this.menuOpened = false;
+      this.menuclicked = false;
+      this.navbarService.menuOpened = false;
+      this.navbarService.bannerAction(false);
     } else {
       element.classList.add("change");
-      this.menuOpened = true;
+      this.menuclicked = true;
+      this.navbarService.menuOpened = true;
+      this.navbarService.bannerAction(true);
     }
   }
 }
