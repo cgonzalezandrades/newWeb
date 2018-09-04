@@ -6,5 +6,5 @@ import { NavbarService } from "../../components/navbar/navbar.service";
   styleUrls: ["./overlay-info.component.scss"]
 })
 export class OverlayInfoComponent {
-  constructor(private navbarService: NavbarService) {}
+  constructor(public navbarService: NavbarService) {}
 }
