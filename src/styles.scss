@@ -222,3 +222,8 @@ button:focus {
 .pb-5 {
   padding-bottom: 2.5rem !important;
 }
+
+.cdk-overlay-container .overlay-info {
+  display: block !important;
+  top: 49px;
+}

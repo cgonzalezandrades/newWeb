@@ -1,4 +1,3 @@
-import { BottomBannerComponent } from "../banners/bottom-banner/bottom-banner.component";
 import { Component, ViewChild } from "@angular/core";
 import { NavbarService } from "./navbar.service";
 
@@ -14,15 +13,13 @@ export class NavbarComponent {
   animateIcon() {
     const element = document.getElementById("container");
     if (this.menuclicked) {
+      this.navbarService.close();
       element.classList.remove("change");
       this.menuclicked = false;
-      this.navbarService.menuOpened = false;
-      this.navbarService.bannerAction(false);
     } else {
+      this.navbarService.open();
       element.classList.add("change");
       this.menuclicked = true;
-      this.navbarService.menuOpened = true;
-      this.navbarService.bannerAction(true);
     }
   }
 }

@@ -7,6 +7,7 @@ import { NavbarService } from "../../navbar/navbar.service";
   styleUrls: ["./top-banner.component.scss"]
 })
 export class TopBannerComponent {
+  constructor(public navbarService: NavbarService) {}
   show = false;
   test() {
     const test = document.getElementById("pic");
