@@ -14,6 +14,7 @@ import { TopBannerComponent } from "./components/banners/top-banner/top-banner.c
 import { OverlayInfoComponent } from "./pages/overlay-info/overlay-info.component";
 
 import { NavbarService } from "./components/navbar/navbar.service";
+import { OverlayInfoService } from "./pages/overlay-info/overlay-info.service";
 
 @NgModule({
   declarations: [
@@ -30,8 +31,8 @@ import { NavbarService } from "./components/navbar/navbar.service";
     MatButtonModule,
     OverlayModule
   ],
-  providers: [NavbarService],
+  providers: [NavbarService, OverlayInfoService],
   bootstrap: [AppComponent],
-  entryComponents: [ OverlayInfoComponent]
+  entryComponents: [OverlayInfoComponent]
 })
 export class AppModule {}

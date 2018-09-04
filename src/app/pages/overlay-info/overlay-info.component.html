@@ -1,3 +1,3 @@
-<div class="overlay-info-component animated slideInUp">
-    dssdsadsa
+<div class="overlay-info-component animated" [ngClass]="{'fadeInUp': navbarService.overlayStatus, 'fadeOutDown': !navbarService.overlayStatus}">
+    content here
 </div>
