@@ -30,6 +30,14 @@ button:focus {
   justify-content: center;
 }
 
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
 .flex {
   display: flex;
 }
@@ -225,5 +233,5 @@ button:focus {
 
 .cdk-overlay-container .overlay-info {
   display: block !important;
-  top: 49px;
+  // top: 81px;
 }

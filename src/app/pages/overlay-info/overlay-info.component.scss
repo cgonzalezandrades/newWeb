@@ -1,6 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
 .overlay-info-component {
   height: 100%;
   background: white;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 2rem;
+
+  .overlay-info-container {
+    height: 100%;
+    .info-column {
+      flex: 1;
+      // background-image: url(https://images.pexels.com/photos/273238/pexels-photo-273238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+      // background-image: url(https://images.pexels.com/photos/258149/pexels-photo-258149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      background-color: black;
+      .inner-right-menu {
+        margin-left: 30%;
+      }
+    }
+
+    .picture-column {
+      // background-image: url(https://images.pexels.com/photos/258149/pexels-photo-258149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+      background-image: url(https://images.pexels.com/photos/273238/pexels-photo-273238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      flex: 1;
+      display: flex;
+      // padding-top: 20%;
+      align-items: center;
+
+      .inner-left-column {
+        .banner-profile-picture {
+          width: 50%;
+          height: 50%;
+          border-radius: 120px;
+        }
+        .picture-title {
+          font-family: "Libre Barcode 39 Text", cursive;
+          font-size: 4vw;
+        }
+      }
+    }
+
+    .info-font {
+      font-size: 7vw;
+    }
+    .links {
+      cursor: pointer;
+      color: white;
+
+      &:hover {
+        color: #b6b6b685;
+      }
+    }
+  }
 }
 .cdk-overlay-pane {
   display: block !important;
