@@ -1,0 +1,38 @@
+.overlay-banner-component {
+  .overlay-container {
+    position: absolute;
+    top: 40%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    .overlay-card {
+      .overlay-card-content {
+        height: 300px;
+      }
+      .tabs {
+        .tab-height {
+          height: 90%;
+        }
+      }
+      .single {
+        .left-col {
+          flex: 1;
+          align-items: center;
+          .profile-picture {
+            height: 60%;
+            width: 40%;
+            border-radius: 100px;
+          }
+        }
+        .right-col {
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .round-btn {
+    border-radius: 10px;
+  }
+}

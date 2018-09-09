@@ -7,10 +7,15 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { ButtonsModule } from "ngx-bootstrap/buttons";
 
 import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from "@angular/material/card";
+import { MatTabsModule } from "@angular/material/tabs";
+import { MatIconModule } from "@angular/material/icon";
 import { AppComponent } from "./app.component";
 
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { TopBannerComponent } from "./components/banners/top-banner/top-banner.component";
+import { BottonBannerComponent } from "./components/banners/botton-banner/botton-banner.component";
+import { OverlayBannerComponent } from "./components/banners/overlay-banner/overlay-banner.component";
 import { OverlayInfoComponent } from "./pages/overlay-info/overlay-info.component";
 
 import { NavbarService } from "./components/navbar/navbar.service";
@@ -21,7 +26,9 @@ import { OverlayInfoService } from "./pages/overlay-info/overlay-info.service";
     AppComponent,
     NavbarComponent,
     TopBannerComponent,
-    OverlayInfoComponent
+    OverlayInfoComponent,
+    OverlayBannerComponent,
+    BottonBannerComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +36,10 @@ import { OverlayInfoService } from "./pages/overlay-info/overlay-info.service";
     FlexLayoutModule,
     ButtonsModule.forRoot(),
     MatButtonModule,
-    OverlayModule
+    OverlayModule,
+    MatCardModule,
+    MatTabsModule,
+    MatIconModule
   ],
   providers: [NavbarService, OverlayInfoService],
   bootstrap: [AppComponent],

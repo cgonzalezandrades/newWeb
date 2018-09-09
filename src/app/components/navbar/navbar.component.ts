@@ -16,7 +16,15 @@ export class NavbarComponent {
   menuclicked = false;
   animateIcon() {
     const element = document.getElementById("container");
+    const fontElement = <HTMLElement>document.getElementsByClassName(
+      "font-color"
+    )[0];
+    const fontElementtwo = <HTMLElement>document.getElementsByClassName(
+      "font-color"
+    )[1];
+    // close overlay
     if (this.menuclicked) {
+      console.log("close overlay");
       this.navbarService.setOverlayInfoStatus(false);
       setTimeout(() => {
         this.overlayInfoService.close();
@@ -24,6 +32,11 @@ export class NavbarComponent {
       element.classList.remove("change");
       this.menuclicked = false;
     } else {
+      console.log("open overlay");
+      setTimeout(() => {
+        fontElement.style.color = "white";
+        fontElementtwo.style.color = "white";
+      }, 700);
       this.navbarService.setOverlayInfoStatus(true);
 
       this.overlayInfoService.open();

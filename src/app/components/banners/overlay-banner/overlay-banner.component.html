@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<div class="overlay-banner-component">
+    <div class="overlay-container">
+
+
+        <mat-card class="overlay-card">
+            <mat-card-content class="overlay-card-content tabs animated" *ngIf="experienceTab" [ngClass]="{fadeIn:experienceTab, fadeOut: !experienceTab}">
+                <mat-tab-group mat-stretch-tabs class="tab-height">
+                    <mat-tab label="All Blue Solutions"> content1 </mat-tab>
+                    <mat-tab label="SMU"> </mat-tab>
+                    <mat-tab label="UCF"> Content 3 </mat-tab>
+                </mat-tab-group>
+                <div class="row justify-content-end">
+                    <button mat-icon-button (click)="seeExperience()">
+                        <mat-icon aria-label="back">home</mat-icon>
+                    </button>
+
+                </div>
+            </mat-card-content>
+
+            <mat-card-content class="overlay-card-content single" *ngIf="!experienceTab">
+                <div class="row full-height animated" [ngClass]="{fadeIn:!experienceSlide, fadeOut: experienceSlide}">
+                    <div class="left-col justify-content-center flex">
+                        <img class="profile-picture" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/12363243_10154436562202564_7139789370579238977_o.jpg?_nc_cat=0&oh=beccbbe5221120050dd3109d99186e45&oe=5C34F4D8">
+                    </div>
+                    <div class="right-col">
+                        <div class="row">
+                            <h4>Hey !</h4>
+                        </div>
+                        <div class="row">
+                            <h4>whant to see my experience ?</h4>
+                        </div>
+                        <div class="row">
+                            <button class="round-btn" mat-raised-button color="primary" (click)="seeExperience()">See my experience</button>
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+
+        </mat-card>
+    </div>
+
+</div>
