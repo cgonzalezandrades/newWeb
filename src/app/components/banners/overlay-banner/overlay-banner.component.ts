@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { MatSnackBar } from "@angular/material";
 
 @Component({
   selector: "app-overlay-banner",
@@ -6,6 +7,7 @@ import { Component } from "@angular/core";
   styleUrls: ["./overlay-banner.component.scss"]
 })
 export class OverlayBannerComponent {
+  constructor(public snackBar: MatSnackBar) {}
   experienceTab = false;
   experienceSlide = false;
   seeExperience() {
@@ -16,5 +18,11 @@ export class OverlayBannerComponent {
     setTimeout(() => {
       this.experienceSlide = !this.experienceSlide;
     }, 900);
+  }
+
+  openSnackBar() {
+    this.snackBar.open("Yay !", "Undo", {
+      duration: 1000
+    });
   }
 }

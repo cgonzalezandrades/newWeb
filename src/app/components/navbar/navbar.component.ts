@@ -34,8 +34,8 @@ export class NavbarComponent {
     } else {
       console.log("open overlay");
       setTimeout(() => {
-        fontElement.style.color = "white";
-        fontElementtwo.style.color = "white";
+        // fontElement.style.color = "white";
+        // fontElementtwo.style.color = "white";
       }, 700);
       this.navbarService.setOverlayInfoStatus(true);
 

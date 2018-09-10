@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Righteous');
 .top-banner-component {
   height: 50%;
-  background-image: url(https://images.pexels.com/photos/698324/pexels-photo-698324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  // background-image: url(https://images.pexels.com/photos/698324/pexels-photo-698324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
 
   // .top-banner {
   //   height: 100%;
@@ -29,4 +31,51 @@
   //   height: 50%;
   //   // background: silver;
   // }
+
+  .top-banner {
+    #video-background {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+    }
+
+    .col-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      color: white;
+      flex-direction: column;
+
+      .divider {
+        background-color: white;
+      }
+      .top-title {
+        // font-family: "Hammersmith One", sans-serif;
+        font-family: "Righteous", cursive;
+        font-size: 6.5vw;
+        color: white;
+      }
+      .botton-title {
+        font-size: 1.5vw;
+        color: white;
+      }
+    }
+
+    .col-2 {
+      flex: 1;
+      height: 100%;
+
+      .title {
+        height: 100%;
+        padding-top: 130px;
+        color: white;
+      }
+    }
+  }
 }

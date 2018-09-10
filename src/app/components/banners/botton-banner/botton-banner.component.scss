@@ -1,4 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
 .botton-banner-component {
-  background: #04243d;
+  background: #2b2b2bb0;
   height: 50%;
+
+  .botton-banner-container {
+    height: 100%;
+
+    .footer-row {
+      position: absolute;
+      top: 95%;
+      justify-content: flex-end;
+      color: white;
+
+      .fotter-info-col {
+        flex: 20;
+        font-family: "Barlow", sans-serif;
+      }
+      .fotter-social-twitter-col {
+        flex: 1;
+
+        .fa-twitter {
+          color: #1da1f2;
+        }
+      }
+
+      .fotter-social-insta-col {
+        flex: 1;
+      }
+      .fotter-social-facebook-col {
+        flex: 1;
+        .fa-facebook {
+          color: #365899;
+        }
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
 }

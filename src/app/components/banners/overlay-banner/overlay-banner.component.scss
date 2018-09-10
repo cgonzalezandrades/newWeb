@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
 .overlay-banner-component {
   .overlay-container {
     position: absolute;
@@ -16,17 +18,95 @@
         }
       }
       .single {
-        .left-col {
+        .col-1 {
+          order: 1;
           flex: 1;
           align-items: center;
-          .profile-picture {
-            height: 60%;
-            width: 40%;
-            border-radius: 100px;
+          flex-direction: column;
+
+          // .profile-picture {
+          //   height: 170px;
+          //   width: 170px;
+          //   border-radius: 100px;
+          // }
+
+          .col-header {
+            font-size: 3vw;
+            font-weight: 500;
+          }
+
+          .col-paragraph {
+            font-size: 1.8vw;
+            // font-weight: 100;
+            font-family: "Libre Franklin", sans-serif;
+          }
+
+          .col-footer {
+            font-size: 2vw;
+            font-weight: 400;
           }
         }
-        .right-col {
+        .col-2 {
+          order: 2;
           flex: 1;
+          justify-content: center;
+          align-items: center;
+
+          .col-picture {
+            height: 100%;
+            width: 70%;
+            border-radius: 150px;
+          }
+
+          // background-image: url(https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/1094043_10153084504215254_2133449521_o.jpg?_nc_cat=0&oh=147925f1e58579e1505fa7f2e39be5e1&oe=5C237A67);
+          // background-repeat: no-repeat;
+          // background-position: top;
+          // background-size: cover;
+
+          // .top-banner {
+          //   height: 50%;
+          //   background-color: #6a006a;
+          //   font-family: "Playfair Display", serif;
+          // }
+
+          // .botton-banner {
+          //   height: 50%;
+          //   .botton-col-1 {
+          //     flex: 1;
+
+          //     background-image: url(https://daniloduchesnes.com/wp-content/uploads/2018/06/Cibler-vos-abonnes-instagram.jpg);
+          //     background-repeat: no-repeat;
+          //     background-position: center;
+          //     background-size: cover;
+          //     &:hover {
+          //       cursor: pointer;
+          //       -webkit-filter: brightness(50%);
+          //       -moz-filter: brightness(50%);
+          //       filter: url(#brightness);
+          //       filter: brightness(50%);
+          //       transition: opacity 0.2s, visibility 0.2s;
+          //       .botton-banner-inner-text {
+          //         visibility: visible;
+          //         opacity: 1;
+          //       }
+          //     }
+          //   }
+
+          //   .botton-col-2 {
+          //     flex: 1;
+          //     background-image: url(http://www.premierforkids.com/wp-content/uploads/2015/05/facebook-logo-png-transparent-background-1200x480.png);
+          //     background-repeat: no-repeat;
+          //     background-position: center;
+          //     background-size: cover;
+          //     &:hover {
+          //       cursor: pointer;
+          //       -webkit-filter: brightness(50%);
+          //       -moz-filter: brightness(50%);
+          //       filter: url(#brightness);
+          //       filter: brightness(50%);
+          //     }
+          //   }
+          // }
         }
       }
     }
@@ -34,6 +114,18 @@
 
   .round-btn {
     border-radius: 10px;
-    background-color: #0380de;
+    background-color: #0d77e1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .overlay-banner-component {
+    .overlay-container {
+      .overlay-card {
+        .overlay-card-content {
+          height: 150px;
+        }
+      }
+    }
   }
 }
