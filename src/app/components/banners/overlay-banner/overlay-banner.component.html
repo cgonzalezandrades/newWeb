@@ -2,8 +2,8 @@
 <div class="overlay-banner-component">
     <div class="overlay-container">
 
-
         <mat-card class="overlay-card">
+
             <mat-card-content class="overlay-card-content tabs animated" *ngIf="experienceTab" [ngClass]="{fadeIn:experienceTab, fadeOut: !experienceTab}">
                 <mat-tab-group mat-stretch-tabs class="tab-height">
                     <mat-tab label="All Blue Solutions"> content1 </mat-tab>
@@ -19,25 +19,27 @@
             </mat-card-content>
 
             <mat-card-content class="overlay-card-content single" *ngIf="!experienceTab">
+
                 <div class="row full-height animated" [ngClass]="{fadeIn:!experienceSlide, fadeOut: experienceSlide}">
+
                     <div class="col-1 flex">
                         <!-- <img class="profile-picture" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/12363243_10154436562202564_7139789370579238977_o.jpg?_nc_cat=0&oh=beccbbe5221120050dd3109d99186e45&oe=5C34F4D8"> -->
                         <div class="row col-header">
-                            Curious about me ?
+                            Who am I ?
                         </div>
                         <div class="row col-paragraph">
-                            <p>I'm a Software Developer based on Dallas, with experience in Full-Stack technologies. </p>
+                            <p>I'm a Software Developer based in Dallas, with experience in Full-Stack technologies. </p>
                         </div>
-                        <div class="row col-footer">
+                        <!-- <div class="row col-footer">
                             Still Curious ?
-                        </div>
+                        </div> -->
                         <div class="row mt-4">
-                            <button class="round-btn" mat-raised-button color="primary" (click)="seeExperience();openSnackBar()">I always wonder</button>
+                            <button class="round-btn" mat-raised-button color="primary" (click)="seeExperience();openSnackBar()">Learn More !</button>
                         </div>
 
                     </div>
                     <div class="col-2 flex">
-                        <img class="col-picture" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/1094043_10153084504215254_2133449521_o.jpg?_nc_cat=0&oh=147925f1e58579e1505fa7f2e39be5e1&oe=5C237A67">
+                        <!-- <img class="col-picture" src="https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/1094043_10153084504215254_2133449521_o.jpg?_nc_cat=0&oh=147925f1e58579e1505fa7f2e39be5e1&oe=5C237A67"> -->
                         <!-- <div class="row justify-content-center">
                             <button class="round-btn" mat-raised-button color="primary" (click)="seeExperience()">Learn More</button>
                         </div> -->
